@@ -30,3 +30,39 @@ export default function Dashboard() {
     </div>
   );
 }
+const [newTx, setNewTx] = useState({ senderName: '', receiverName: '', amount: 0 });
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+  const tx = {
+    id: transactions.length + 1,
+    ...newTx,
+    status: "Pending",
+    timestamp: new Date().toISOString()
+  };
+  setTransactions([...transactions, tx]);
+  setNewTx({ senderName: '', receiverName: '', amount: 0 });
+};
+
+<form onSubmit={handleSubmit}>
+  <input 
+    placeholder="Sender" 
+    value={newTx.senderName}
+    onChange={(e) => setNewTx({...newTx, senderName: e.target.value})}
+    required
+  />
+  <input 
+    placeholder="Receiver" 
+    value={newTx.receiverName}
+    onChange={(e) => setNewTx({...newTx, receiverName: e.target.value})}
+    required
+  />
+  <input 
+    type="number"
+    placeholder="Amount"
+    value={newTx.amount}
+    onChange={(e) => setNewTx({...newTx, amount: parseFloat(e.target.value)})}
+    required
+  />
+  <button type="submit">Add Transaction</button>
+</form>
