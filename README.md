@@ -10,3 +10,4 @@
 2. Run `npm install`.
 3. Start mock API: `npm run server` (uses `json-server`).
 4. Start app: `npm start`.
+
