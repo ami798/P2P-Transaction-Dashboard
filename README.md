@@ -1,5 +1,4 @@
 # P2P-Transaction-Dashboard
-## Prog-Hubs project 
 ## Features
 - View all transactions (sender, receiver, amount, status).
 - Filter by status (Pending/Completed/Failed).
@@ -11,3 +10,4 @@
 2. Run `npm install`.
 3. Start mock API: `npm run server` (uses `json-server`).
 4. Start app: `npm start`.
+

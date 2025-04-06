@@ -1,0 +1,12 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "senderName": "Aster",
+      "receiverName": "Yared",
+      "amount": 150.00,
+      "status": "Completed",
+      "timestamp": "2023-10-01T14:30:00Z"
+    }
+  ]
+}
