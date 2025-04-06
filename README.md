@@ -1,4 +1,5 @@
-# P2P-Transaction-Dashboard
+## P2P-Transaction-Dashboard
+## Prog-Hubs project
 ## Features
 - View all transactions (sender, receiver, amount, status).
 - Filter by status (Pending/Completed/Failed).
